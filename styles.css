@@ -1,0 +1,621 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* GLOBAL STYLES */
+html {
+    font-family: 'Pacifico', cursive;
+    color: #1F2022;
+}
+
+body {
+    font-size: 125%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #F2A11C;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+button {
+    background-color: #1F2022;
+    border: none;
+    padding: 10px;
+}
+
+.container1,
+.container2,
+.container3,
+.container4,
+.container5,
+.flexbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon::before {
+display: inline-block;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+}
+
+.fa-font-brands::before {
+font: var(--fa-font-solid);
+content: "\f16d", "\f09a", "\f2ab", "\f099", "\F039";
+}
+
+/* WRAPPER STYLES */
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* TYPOGRAPHY STYLES */
+
+h1, h2, h3, h4, h5, h6 {
+margin: 0;
+}
+
+h1 {
+    color: #F2A11C;
+    font-size: 6.5rem;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.1rem;
+}
+
+p,
+i {
+    font-size: 1rem;
+}
+
+.fa-brands,
+.fab,
+.fa-instagram,
+.fa-facebook,
+.fa-snapchat,
+.fa-twitter,
+.fa-solid,
+.social a {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+  }
+
+a,
+p,
+button,
+form {
+    font-family: 'Catamaran', sans-serif;
+}
+
+nav a {
+
+    color: #FFF;
+}
+
+button {
+    font-size: 1.82rem;
+    font-weight: 700;
+    color: #F2A11C;
+}
+
+/* HEADER STYLES */
+
+header {
+    background-color: #4A4A4A;
+    background-image: url(./biker-land-assets/image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header button {
+    background-color: transparent;
+}
+
+header .head-wrap{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    padding: 20px;
+}
+
+header .nothing {
+    width: 60%;
+}
+
+.ham-nav {
+    text-align: center;
+    display: none;
+    max-width: 100%;
+}
+
+#hamburger {
+    display: none;
+}
+
+header h1 {
+    display: inline-block;
+    margin: 30vh 0;
+}
+
+.fa-brands {
+    display: inline;
+    color: #F2A11C;
+}
+
+.social {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* MAIN STYLES */
+
+/* About us */
+
+.about-us .nothing {
+    width: 0%;
+    height: 0%;
+}
+
+.about-us {
+    height: auto;
+    background-color: transparent;
+    background-image: url(./biker-land-assets/image-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position-x: right;
+}
+
+.about-us .container1 {
+    flex-direction: column;
+    padding: 30px 0;
+    width: 45%;
+}
+
+/* Our mission */
+
+.our-mission {
+    height: auto;
+    background-color: transparent;
+    background-image: url(./biker-land-assets/image-7.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+
+.our-mission .nothing {
+    width: 55%;
+}
+
+.our-mission .container2 {
+    flex-direction: column;
+    align-content: flex-end;
+    padding: 30px 0;
+    width: 45%;
+}
+
+/* Meet Alissa */
+
+.meet-alissa {
+    height: auto;
+    background-color: #FFF;
+    padding: 20px 0;
+}
+
+.meet-alissa .flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+figure {
+    max-width: 30%;
+}
+
+.meet-alissa .container3 {
+    flex-direction: column;
+    align-content: flex-end;
+    width: 60%;
+    margin-left: 30px;
+}
+
+/* Extra links */
+
+.extra-links {
+    background-image: url(./biker-land-assets/image-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra-links ul {
+    display: flex;
+    flex-flow: row wrap;
+    flex-basis: 51;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+.extra-links li {
+    flex-basis: 15%;
+    display: inline-block;
+}
+
+.linksbox {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin: 0 auto;
+}
+
+.linksbox a {
+    padding-top: 5px;
+}
+
+.fa-solid {
+    color: #FFF;
+}
+
+/* The Gram */
+
+.the-gram {
+    padding: 80px 0;
+}
+
+.the-gram h2 {
+    text-align: center;
+}
+
+.the-gram ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.the-gram li {
+    display: flex;
+    flex-basis: 32%;
+    padding: 15px;
+    margin: 20px auto 20px auto;
+}
+
+/* FOOTER STYLES */
+
+footer {
+    background-color: #1F2022;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    padding: 20px;
+}
+
+footer .flexbox {
+    display: flex;
+    padding: 30px;
+}
+
+.container4,
+.container5 {
+    flex-flow: column wrap;
+    width: 50%;
+}
+
+footer h3 {
+    color: #F2A11C;
+    margin: 5px 0;
+}
+
+footer p {
+    color: white;
+    margin: 5px 0;
+}
+
+form {
+    font-size: 1.82rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+form label,
+form input, 
+form button {
+    font-size: inherit;
+}
+
+form input[type="email"] {
+    width: 100%;
+}
+
+form button {
+    background-color: #F2A11C;;
+    color: #1F2022;
+    width: 100%;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+
+    /* Header */
+    
+    header {
+        background-image: url(./biker-land-assets/image-1-mobile.jpg);
+        min-height: 70vh;
+    }
+
+    .main-nav,
+    .social,
+    .ham-nav {
+        display: none;
+    }
+
+    header .nothing {
+        width: 100%;
+        flex-flow: column wrap;
+    }
+
+    header .nothing ul li {
+        padding: 10px;
+    }
+
+    header .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .hamburger-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #hamburger {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-width: 100%;
+        display: block;
+        border: none;
+        padding: 0px;
+        margin: 20px;
+        background-color: transparent;
+        text-align: right;
+    }
+
+    header .nothing {
+        position: relative;
+    }
+
+    header .nothing:hover .ham-nav {
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        padding-top: 13vh;
+    }
+
+    header h1 {
+        display: block;
+        margin: 0 auto;
+        font-size: 3rem;
+        padding-top: 18vh;
+    }
+
+    /* About us */
+
+    .about-us {
+        background-size: 100% auto;
+    }
+    
+    .about-us .flexbox {
+        flex-flow: column wrap;
+        height: 100%;
+        align-items: center;
+        padding-top: 60vh;
+    }
+
+    .about-us .container1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-us p {
+        text-align: center;
+    }
+
+    /* Our mission */
+
+    .our-mission .nothing {
+        width: 0%;
+        height: 0%;
+    }
+
+    .our-mission {
+        background-size: 100% auto;
+    }
+
+    .our-mission .flexbox {
+        flex-flow: column wrap;
+        height: 100%;
+        align-items: center;
+        padding-top: 60vh;
+    }
+
+    .our-mission .container2 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .our-mission p {
+        text-align: center;
+    }
+
+    /* Meet Alissa */
+
+    .meet-alissa .flexbox {
+        flex-flow: column wrap;
+        height: 100%;
+    }
+
+    .meet-alissa figure {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .meet-alissa .container3 {
+        margin-left: 0;
+        width: 100%;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .meet-alissa p {
+        text-align: center;
+    }
+
+    /* Extra links */
+
+    .extra-links {
+        background-position-x: right;
+    }
+
+    .extra-links .flexbox {
+        flex-flow: column wrap;
+    }
+
+    .linksbox {
+        padding: 5px;
+    }
+    
+    /* The Gram */
+
+    .the-gram {
+        padding: 20px 0;
+    }
+
+    .the-gram .flexbox {
+        justify-content: center;
+    }
+
+    .the-gram ul {
+        margin: 0;
+    }
+
+    .the-gram li {
+        max-width: 50%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .the-gram .hide-image {
+        height: 0;
+        max-width: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Footer */
+
+    footer nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 20px;
+    }
+
+    footer .flexbox {
+        padding: 0;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    footer .container4,
+    footer .container5 {
+        width: 100%;
+        max-width: 100%;
+        padding-top: 20px;
+        align-items: center;
+    }
+
+    footer h3,
+    footer p {
+        text-align: center;
+        width: 100%;
+    }
+
+    input[type="email"] {
+        margin-top: 20px;
+      }
+
+    footer button {
+        margin-bottom: 20px;
+    }
+
+    footer nav ul li {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 485px) {
+    .about-us .flexbox,
+    .our-mission .flexbox {
+        padding-top: 45vh;
+    }
+
+    header a {
+        padding: 0;
+        font-size: 0.5rem;
+    }
+}
